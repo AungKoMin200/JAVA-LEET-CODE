@@ -1,0 +1,13 @@
+class Solution(object):
+    def isPalindrome(self, x):
+        """
+        :type x: int
+        :rtype: bool
+        """
+        x_str = str(x)
+        
+        # Compare with its reverse
+        if x_str == x_str[::-1]:
+            return True
+        else:
+            return False
